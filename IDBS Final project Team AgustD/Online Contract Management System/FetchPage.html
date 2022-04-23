@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Contract Management System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+<body class="updatepageselect">
+    <label for="Tables">Select the table you want to fetch the data from:</label>
+
+    <div id="wrapper">
+        <div class="menu"></div>
+<select id="Tables" name="Tables" >
+  <option value="default">--select---</option>
+  <option value="contractor" name="contractor">contractor</option>
+  <option value="customer" name="customer">customer</option>
+  <option value="workdoneby" name="workdoneby">workdoneby</option>
+  <option value="work" name="work">work</option>
+  <option value="workers" name="workers">workers</option>
+  <option value="engineer" name="enginee">engineer</option>
+  <option value="blueprint" name="blueprint">blueprint</option>  
+</select>
+</div>
+
+<div id="contractor" class="data">
+  <form method="GET" action="fetchcontractor.php">
+  <br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="engineer" class="data"> 
+  <form method="GET" action="fetchengineer.php">
+  <br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="workers" class="data">
+  <form method="GET" action="fetchworkers.php">
+  <br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="customer" class="data">
+  <form method="GET" action="fetchcustomer.php">
+  <br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="blueprint" class="data">
+  <form method="GET" action="fetchblueprint.php">
+<br><br>
+<input type="submit" name="submit" value="Submit">
+
+</form>
+</div>
+
+<div id="workdoneby" class="data">
+  <form method="GET" action="fetchworkdoneby.php"> 
+  <br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="work" class="data">
+  <form method="GET" action="fetchwork.php" >
+  <br><br>
+
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#Tables").on('change',function(){
+        $(".data").hide();
+       $("#" + $(this).val()).fadeIn(700);
+        }).change();
+    });
+</script>
+</div>
+</body>

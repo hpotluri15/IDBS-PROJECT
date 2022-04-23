@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Contract Management System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+<body class="updatepageselect">
+    <label for="Tables">Select the table you want to modify the data:</label>
+
+    <div id="wrapper">
+        <div class="menu"></div>
+<select id="Tables" name="Tables" >
+  <option value="default">--select---</option>
+  <option value="contractor" name="contractor">contractor</option>
+  <option value="customer" name="customer">customer</option>
+  <option value="workdoneby" name="workdoneby">workdoneby</option>
+  <option value="work" name="work">work</option>
+  <option value="workers" name="workers">workers</option>
+  <option value="engineer" name="enginee">engineer</option>
+  <option value="blueprint" name="blueprint">blueprint</option>  
+</select>
+</div>
+
+<div id="contractor" class="data">
+  <form method="GET" action="updatecontractor.php">
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="contractor" name="contractor">
+  <option value="default">--select---</option>
+  <option value="contractor_Id" name="contractor_Id">contractor_Id</option>
+  <option value="Contractor_Name" name="Contractor_Name">Contractor_Name</option>
+  <option value="No_of_Workers" name="No_of_Workers">No_of_Workers</option>
+  <option value="No_of_Contract" name="No_of_Contract">No_of_Contract</option>
+  <option value="Customer_ID" name="Customer_ID">Customer_ID</option>
+  <option value="Location_ID" name="Location_ID">Location_ID</option>
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="contractorID"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="engineer" class="data"> 
+  <form method="GET" action="updateengineer.php">
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="engineer" name="engineer" >
+  <option value="default">--select---</option>
+  <option value="Engineer_Id" name="Engineer_Id">Engineer_Id</option>
+  <option value="Engineer_Name" name="Engineer_Name">Engineer_Name</option>
+  <option value="Engineer_Salary" name="Engineer_Salary">Engineer_Salary</option>
+  <option value="Engineer_Experience" name="Engineer_Experience">Engineer_Experience</option>
+  <option value="Location_Id" name="Location_Id">Location_Id</option>
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="Engineer_Id"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="workers" class="data">
+  <form method="GET" action="updateworker.php">
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="workers" name="workers" >
+  <option value="default">--select---</option>
+  <option value="Worker_Id" name="Worker_Id">Worker_Id</option>
+  <option value="Type" name="Type">Type</option>
+  <option value="Name" name="Name">Name</option>
+  <option value="Daily_wage" name="Daily_wage">Daily_w1age</option>
+  <option value="Location_Id" name="Location_Id">Location_Id</option>
+  
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="WorkerID"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="customer" class="data">
+  <form method="GET" action="updatecustomer.php">
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="customer" name="customer"  >
+  <option value="default">--select---</option>
+  <option value="Customer_Id" name="Customer_Id">Customer_Id</option>
+  <option value="Engineer_Id" name="Engineer_Id">Engineer_Id</option>
+  
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="CustomerID"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="blueprint" class="data">
+  <form method="GET" action="updateblueprint.php">
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="blueprint" name="blueprint"  >
+  <option value="default">--select---</option>
+  <option value="Engineer_Id" name="Engineer_Id">Engineer_Id</option>
+  <option value="Customer_Id" name="Customer_ID">Customer_Id</option>`  
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="Engineer_Id"><br><br>
+<input type="submit" name="submit" value="Submit">
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+</form>
+</div>
+
+<div id="workdoneby" class="data">
+  <form method="GET" action="updateworkdoneby.php"> 
+  <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="workdoneby" name="workdoneby"  >
+  <option value="default">--select---</option>
+  <option value="Worker_Id" name="Worker_Id">Worker_Id</option>
+  <option value="Location_Id" name="Location_Id">Location_Id</option>
+  
+</select>
+<br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="workerid"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<div id="work" class="data">
+  <form method="GET" action="updatework.php" >
+    <br><br>
+  <div> <p><b> Select the coloumn you want to update the value for: </b></p></div>
+<select id="work" name="work" >
+  <option value="default">--select---</option>
+  <option value="Location_Id" name="Location_Id">Location_Id</option>
+  <option value="Work_Location" name="Work_Location">Work_Location</option>
+  <option value="Type" name="Type">Type</option>
+  <option value="Start_Date" name="Start_Date">Start_Date</option>
+  <option value="End_Date" name="End_Date">End_Date</option>
+  <option value="Engineer_ID" name="Engineer_ID">Engineer_ID</option>
+  
+  </select>
+  <br><br>
+<div> <p><b> Select the row you want to update the value to: </b></p></div>
+<input type="text" name="row" placeholder="LocationID"><br><br>
+<div> <p><b> Enter the new value you want to update: </b></p></div>
+<input type="text" name="updateValue" placeholder="NewValue"><br><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#Tables").on('change',function(){
+        $(".data").hide();
+       $("#" + $(this).val()).fadeIn(700);
+        }).change();
+    });
+</script>
+</div>
+</body>

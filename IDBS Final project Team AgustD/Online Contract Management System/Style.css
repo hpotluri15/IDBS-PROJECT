@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(https://parleypro.com/wp-content/uploads/2021/08/ideas-to-improve-contract-management-1200x900.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+
+.menu{
+    
+    width: 220px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    color: #49b066;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(52, 178, 71);
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #c7cfcb;
+}
+
+
+
+.content{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .paragraph{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman';
+    letter-spacing: 0.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    color: #ffffff;
+    letter-spacing: 12px;
+}
+
+
+    
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #18b05c;
+    font-size: 65px
+}
+
+    
+
+.insertpageselect{
+
+    font-family: 'Times New Roman';
+    text-align: left;
+    font-size: 122px;
+    padding-left: 20px;
+    margin-top: 1%;
+    color: #22a869;
+    letter-spacing: 150px;
+    width: 100%;
+    height:100%;
+    
+   
+}
+
+.createpagebuttons{
+
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    color: #22a869;
+    letter-spacing: 2px;
+   
+}
+
+
+.updatepagebuttons{
+
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    color: #22a869;
+    letter-spacing: 2px;
+
+}
+
+.deletepagebuttons{
+
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    color: #22a869;
+    letter-spacing: 2px;
+   
+}
+
+.fetchpagebuttons{
+
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    color: #22a869;
+    letter-spacing: 2px;
+   
+}
+
+
+

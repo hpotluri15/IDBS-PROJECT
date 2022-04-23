@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Contract Management System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<br><br>
+<body class="header">
+    <h2><p><b> Select the table you want to add the data into:</b></p></h2>
+</body>
+<body class="insertpageselect">
+    
+    <div id="wrapper">
+        <div class="menu"></div>
+<select id="Tables" >
+  <option value="default">--select---</option>
+  <option value="contractor">contractor</option>
+  <option value="customer">customer</option>
+  <option value="workdoneby">workdoneby</option>
+  <option value="work">work</option>
+  <option value="workers">workers</option>
+  <option value="engineer">engineer</option>
+  <option value="blueprint">blueprint</option>
+</select>
+
+</div>
+<br><br>
+
+<div class="content">
+<div   Id="contractor" class="data"  >
+    <form method="GET" action="insertcontractor.php">
+  <input type="text" id="ID" name="ContractorID"placeholder="contractorID"><br><br>
+  <input type="text" id="name" name="Contractorname" placeholder="contractorName"><br><br>
+  <input type="text" id="Workers" name="Workers" placeholder="no.of workers"><br><br>
+  <input type="text" id="Contracts" name="No_ofContracts" placeholder="No.of Contracts"><br><br>
+  <input type="text" id="ID" name="CustomerId" placeholder="CustomerID"><br><br>
+  <input type="text" id="ID" name="LocationID" placeholder="LocationId"><br><br>
+  <input type="submit" name="submit" value="Submit">
+</form>
+</div>
+    
+<div class="data" Id="customer"  method="GET" >
+    <form method="GET" action="insertcustomer.php">
+    <input type="text" id="ID" name="CustomerID" placeholder="customerID"><br><br>
+    <input type="text" id="name" name="name" placeholder="customername"><br><br>
+    <input type="text" id="EngineerID" name="E_ID" placeholder="EngineerID"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+</div>
+<div   Id="workdoneby" class="data"  method="GET">
+    <form method="GET" action="insertworkdoneby.php">
+    <input type="text" id="ID" name="WorkerID"placeholder="WorkerID"><br><br>
+    <input type="text" id="LocationId" name="LocationId" placeholder="LocationId"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+  </div>
+  <div   Id="work" class="data"  method="GET">
+    <form method="GET" action="insertwork.php">
+    <input type="text" id="ID" name="LocationID"placeholder="LocationID"><br><br>
+    <input type="text" id="WorkLocation" name="W_location" placeholder="Work_Location"><br><br>
+    <input type="text" id="Type" name="Type" placeholder="Type"><br><br>
+    <input type="text" id="StartDate" name="startDate" placeholder="start Date"><br><br>
+    <input type="text" id="End Date" name="EndDate" placeholder="EndDate"><br><br>
+    <input type="text" id="Engineer ID" name="EngineerID", placeholder="EngineerID"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+  </div>
+  <div   Id="workers" class="data"  method="GET">
+    <form method="GET" action="insertworker.php">
+    <input type="text" id="ID" name="WorkerID"placeholder="WorkerID"><br><br>
+    <input type="text" id="name" name="Type" placeholder="Type"><br><br>
+    <input type="text" id="Name" name="Name" placeholder="WorkerName"><br><br>
+    <input type="text" id="DailyWage" name="DailyWage" placeholder="DailyWage"><br><br>
+    <input type="text" id="LocationID" name="LocationID" placeholder="LocationId"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+  </div>
+  <div   Id="engineer" class="data"  method="GET">
+    <form method="GET" action="insertengineer.php">
+    <input type="text" id="ID" name="EngineerID"placeholder="EngineerID"><br><br>
+    <input type="text" id="name" name="name" placeholder="EngineerName"><br><br>
+    <input type="text" id="Workers" name="Salary" placeholder="salary"><br><br>
+    <input type="text" id="Exp" name="exp" placeholder="Experience"><br><br>
+    <input type="text" id="ID" name="LocationID", placeholder="LocationId"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+  </div>
+  <div   Id="blueprint" class="data"  method="GET">
+    <form method="GET" action="insertblueprint.php">
+    <input type="text" id="E_ID" name="EngineerId"placeholder="EngineerID"><br><br>
+    <input type="text" id="C_ID" name="CustomerID" placeholder="CustomerID"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+  </div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#Tables").on('change',function(){
+        $(".data").hide();
+       $("#" + $(this).val()).fadeIn(700);
+        }).change();
+    });
+</script>
+</div>
+ </body>
+    
